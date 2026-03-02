@@ -8,7 +8,7 @@ signal = np.sin(2 * np.pi * 1.2 * t) + np.random.normal(0, 0.2, 1000) # 1.2 Hz ~
 def detect_bpm(time, signal):
     # Calcul simple des pics (seuil)
     peaks = np.where(signal > 0.8)[0]
-    # ... logique pour calculer l'intervalle entre les pics
+    # logique pour calculer l'intervalle entre les pics
     return 72 
 
 plt.plot(t, signal)
